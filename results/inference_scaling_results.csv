@@ -1,0 +1,4 @@
+PE,Cycles,Speedup,Cells,Cell_Growth,Speedup_per_Cell_Growth
+1,641,1.000,26971,1.000,1.000
+4,161,3.981,50304,1.865,2.135
+8,81,7.914,81514,3.022,2.618

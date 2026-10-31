@@ -1,0 +1,28 @@
+# Simulation executables
+*_sim
+sim/
+build/
+
+# Simulation waveforms and logs
+*.vcd
+*.fst
+*.lxt
+*.log
+
+# Generated synthesis output
+synthesis/results/*
+!synthesis/results/.gitkeep
+
+# Generated result artifacts
+# Keep measured CSV/Markdown research results tracked.
+# Do not ignore results/*.csv or results/*.md.
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+
+# Python
+__pycache__/
+*.pyc

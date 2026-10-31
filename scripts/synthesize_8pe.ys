@@ -1,0 +1,16 @@
+read_verilog -sv rtl/accelerator/mac.sv
+read_verilog -sv rtl/accelerator/matmul_scalable.sv
+
+chparam -set NUM_PE 8 matmul_scalable
+hierarchy -top matmul_scalable
+proc
+opt
+memory
+opt
+techmap
+opt
+abc -g simple
+clean
+stat
+
+write_verilog synthesis/results/matmul_8pe_netlist.v
