@@ -24,7 +24,6 @@ The CPU is responsible for control and program execution, while the accelerator 
 
 ### High-level architecture
 
-```text
                          ┌─────────────────────┐
                          │      RV32I CPU      │
                          │                     │
